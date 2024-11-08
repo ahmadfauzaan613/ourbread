@@ -1,8 +1,10 @@
 import React from 'react'
 import Logo from '../assets/brandLogo/LOGO 8.png'
-import Logo2 from '../assets/brandLogo/LOGO 6.png'
 import Gif from '../assets/gifTex.gif'
+import { useNavigate } from 'react-router-dom'
 function Home() {
+  const navigate = useNavigate()
+
   return (
     <React.Fragment>
       {/* NAVBAR */}
@@ -18,7 +20,9 @@ function Home() {
           <div className="container mx-auto py-7 flex items-center justify-between">
             <img src={Logo} alt="" className="w-[8vw] continuous-flip" />
             <div className="flex items-center space-x-6">
-              <p className="text-white">Menu</p>
+              <p onClick={() => navigate('/linktree')} className="text-white cursor-pointer">
+                Linktree
+              </p>
               <p className="text-white">Menu</p>
               <p className="text-white">Menu</p>
               <p className="text-white">Menu</p>
