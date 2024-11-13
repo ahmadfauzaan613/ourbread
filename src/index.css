@@ -45,3 +45,9 @@ p {
   animation: continuous-flip 7s linear infinite;
   transform-style: preserve-3d;
 }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
